@@ -1,21 +1,20 @@
-  javascript
-function append(value) {
-  document.getElementById("display").value += value;
-}
+herejavascript
+document.addEventListener("DOMContentLoaded", function () {
+  const display = document.getElementById("display");
 
-function clearDisplay() {
-  document.getElementById("display").value = "";
-}
+  window.append = function (value) {
+    display.value += value;
+  };
 
-function calculate() {
-  try {
-    let result = eval(document.getElementById("display").value);
-    document.getElementById("display").value = result;
-  } catch {
-    document.getElementById("display").value = "Error";
-  }
-}
-```
+  window.clearDisplay = function () {
+    display.value = "";
+  };
 
----
-
+  window.calculate = function () {
+    try {
+      display.value = eval(display.value);
+    } catch {
+      display.value = "Error";
+    }
+  };
+});
