@@ -1,9 +1,10 @@
 ```css
 body {
   text-align: center;
-  font-family: Arial;
-  background-color: #111;
-  color: white;
+  font-family: Arial; 
+  css
+background-image: url('background.jpg');
+  
 }
 
 input {
