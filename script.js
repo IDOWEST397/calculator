@@ -1,4 +1,4 @@
-```javascript
+  javascript
 function append(value) {
   document.getElementById("display").value += value;
 }
@@ -15,4 +15,7 @@ function calculate() {
     document.getElementById("display").value = "Error";
   }
 }
-``
+```
+
+---
+
